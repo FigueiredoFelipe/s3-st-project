@@ -1,0 +1,9 @@
+<!-- <span> {{ title() }} </span>
+<span class="icon"> {{ text() }} </span> -->
+
+<span>
+  <ng-content />
+</span>
+<span ngProjectAs="icon">
+  <ng-content select="icon"> ➤ </ng-content>
+</span>
